@@ -23,8 +23,8 @@ Rx<Product> product = Product(name: "benz", price: "100T", off: "2%").obs;
             ElevatedButton(style:ButtonStyle(backgroundColor:WidgetStatePropertyAll<Color>(Colors.green) ),onPressed: (){
               product.update((value){
                 value!.name="pride";
-                value!.price="2T";
-                value!.off="3%";
+                value.price="2T";
+                value.off="3%";
               });
             }, child: Icon(Icons.update,color: Colors.white,),)
           ],
